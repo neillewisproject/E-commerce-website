@@ -1,0 +1,13 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "aeco-bim-unimatrix-iac-ecad-frontend-canvas": {
+      "appLocation": ".",
+      "apiLocation": ".pages/api",
+      "outputLocation": ".next",
+      "appBuildCommand": "npm run build",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:3000"
+    }
+  }
+}
