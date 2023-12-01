@@ -11,7 +11,7 @@ async function connect() {
     if (connection.isConnected === 1) {
       return;
     }
-    await mongoose.disconnect();
+    // await mongoose.disconnect();
   }
   const db = await mongoose.connect('mongodb://testmongodemo:j8aYsOd5nX1UDiuuzglDcrvdtbg5i6w8PYbd28fT1LxLFwjXCehjr1wLcNPcQiyn6y6MG88ZqnMnACDbVpQZoQ==@testmongodemo.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@testmongodemo@');
   connection.isConnected = db.connections[0].readyState;
@@ -20,7 +20,7 @@ async function connect() {
 async function disconnect() {
   if (connection.isConnected) {
     if (process.env.NODE_ENV === "production") {
-      await mongoose.disconnect();
+      // await mongoose.disconnect();
       connection.isConnected = false;
     } else {
       console.log("not disconnected");
