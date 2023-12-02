@@ -3,7 +3,7 @@ import db from "@/utils/db";
 import { getSession } from "next-auth/react";
 
 const handler = async (req, res) => {
-  const session = await getSession({ req });
+  const session = await useSession({ req });
   if (!session) {
     res.status(401).send("Signin required");
   }

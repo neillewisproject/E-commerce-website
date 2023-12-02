@@ -3,7 +3,16 @@
   "configurations": {
     "aeco-bim-unimatrix-iac-ecad-frontend-canvas": {
       "appLocation": ".",
-      "apiLocation": ".pages/api",
+      "apiLocation": "",
+      "outputLocation": ".next",
+      "appBuildCommand": "npm run build",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:3000",
+      "appName": "e-commerce-website",
+      "resourceGroup": "e-commerce-website-rg"
+    },
+    "e-commerce-website": {
+      "appLocation": ".",
       "outputLocation": ".next",
       "appBuildCommand": "npm run build",
       "run": "npm run dev",
