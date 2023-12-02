@@ -279,7 +279,7 @@ function Layout({ title, children }) {
           {children}
         </main>
         <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Design by Neil</p>
+          <p>Design by Neil Lewis</p>
         </footer>
       </div>
     </>

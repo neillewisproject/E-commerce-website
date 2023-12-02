@@ -13,8 +13,7 @@ async function connect() {
     }
     // await mongoose.disconnect();
   }
-  // const db = await mongoose.connect('mongodb://testmongodemo:j8aYsOd5nX1UDiuuzglDcrvdtbg5i6w8PYbd28fT1LxLFwjXCehjr1wLcNPcQiyn6y6MG88ZqnMnACDbVpQZoQ==@testmongodemo.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@testmongodemo@');
-  const db = await mongoose.connect('  mongodb://monogdbdemo:11pbF2CmFjUoxXcRK47S4WIymqz26eiCmqHBstq89sZ2PiYs0jp83K2a5gnvTjdkdxZlXFEc5P4ZACDbVKzJAA%3D%3D@monogdbdemo.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@monogdbdemo@');
+  const db = await mongoose.connect('mongodb://monogdbdemo:11pbF2CmFjUoxXcRK47S4WIymqz26eiCmqHBstq89sZ2PiYs0jp83K2a5gnvTjdkdxZlXFEc5P4ZACDbVKzJAA%3D%3D@monogdbdemo.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@monogdbdemo@');
 
   connection.isConnected = db.connections[0].readyState;
 }
